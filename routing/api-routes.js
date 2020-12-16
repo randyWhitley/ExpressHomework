@@ -5,8 +5,7 @@ let data = JSON.parse(fs.readFileSync("./db/db.json", "utf8"));
 module.exports = function(app) {
 
     app.get("/api/notes", function(req, res) {
-       console.log("hi");
-        res.json(data);
+       res.json(data);
 
     });
 
